@@ -1,0 +1,1 @@
+export const JsxComp = <div>jsx组件</div>

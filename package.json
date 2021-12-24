@@ -1,0 +1,25 @@
+{
+  "name": "vue-vben-learn",
+  "version": "1.0.0",
+  "description": "从零开始搭建vben",
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite",
+    "build": "vite build",
+    "type:check": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.2.26"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.1",
+    "@vitejs/plugin-vue-jsx": "^1.3.3",
+    "autoprefixer": "^10.4.0",
+    "less": "^4.1.2",
+    "postcss": "^8.4.5",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.6",
+    "vue-tsc": "^0.30.0"
+  }
+}
