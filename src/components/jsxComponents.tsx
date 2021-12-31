@@ -1,1 +1,3 @@
-export const JsxComp = <div>jsx组件</div>
+export const JsxComp = <div>
+  <div>jsx组件</div>
+</div>

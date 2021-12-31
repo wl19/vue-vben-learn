@@ -11,6 +11,12 @@
         我是box 的子元素
       </div>
     </div>
+    <a-button type="primary">Primary Button</a-button>
+  <a-button>Default Button</a-button>
+  <a-button type="dashed">Dashed Button</a-button>
+  <a-button type="text">Text Button</a-button>
+  <a-button type="link">Link Button</a-button>
+  <Divider />
   </div>
 </template>
 
@@ -18,6 +24,7 @@
 import { ref } from 'vue'
 // @ts-ignore
 import { JsxComp } from './components/jsxComponents.tsx'
+import { Divider } from 'ant-design-vue'
 // @ts-ignore
 const test:string = "测试"
 const count = ref<number>(1)
