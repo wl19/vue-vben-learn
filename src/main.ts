@@ -1,5 +1,9 @@
 
 
+import 'virtual:windi-base.css';
+import 'virtual:windi-components.css';
+import 'virtual:windi-utilities.css';
+
 import App from './App.vue'
 import { createApp } from 'vue'
 

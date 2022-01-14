@@ -1,10 +1,13 @@
-// vue 单文件支持
-import vue from '@vitejs/plugin-vue'
-// jsx 文件支持
-import vueJsx from '@vitejs/plugin-vue-jsx'
-// 按需加载antdv
+/**
+ *  Introduces component library styles on demand.
+ * https://github.com/anncwb/vite-plugin-style-import
+ */
 import styleImport from 'vite-plugin-style-import';
-function configStyleImportPlugin() {
+
+export function configStyleImportPlugin(_isBuild: boolean) {
+  // if (!isBuild) {
+  //   return [];
+  // }
   const styleImportPlugin = styleImport({
     libs: [
       {
@@ -73,19 +76,4 @@ function configStyleImportPlugin() {
     ],
   });
   return styleImportPlugin;
-}
-
-export default {
-  base: './',
-  plugins: [vue(),vueJsx({}),
-    configStyleImportPlugin()
-  ],
-  css: {
-    preprocessorOptions: {
-      less: {
-        javascriptEnabled: true,
-      },
-    },
-  },
-  
 }

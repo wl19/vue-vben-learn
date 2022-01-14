@@ -11,28 +11,28 @@
         我是box 的子元素
       </div>
     </div>
-    <a-button type="primary">Primary Button</a-button>
-  <a-button>Default Button</a-button>
-  <a-button type="dashed">Dashed Button</a-button>
+    <a-button type="primary" class="mx-2">Primary Button</a-button>
+  <a-button class="mx-2" >Default Button</a-button>
+  <a-button type="dashed" >Dashed Button</a-button>
   <a-button type="text">Text Button</a-button>
   <a-button type="link">Link Button</a-button>
+  <div>
+    <span>xxxxx</span>
+    <span class="ml-2">jjjjj</span>
+  </div>
   <Divider />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-// @ts-ignore
-import { JsxComp } from './components/jsxComponents.tsx'
+import { JsxComp } from './components/jsxComponents'
 import { Divider } from 'ant-design-vue'
-// @ts-ignore
 const test:string = "测试"
 const count = ref<number>(1)
-// @ts-ignore
 const pre = ()=>{
   count.value ++
 }
-// @ts-ignore
 const next = ()=>{
   count.value --
 }
